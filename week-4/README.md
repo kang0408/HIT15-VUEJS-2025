@@ -206,6 +206,9 @@ Có một điều chúng ta cần chú ý ở đây là tên các thuộc tính 
 #### 3. Components basic
 
 - Component là những khối giao diện độc lập và tái sử dụng được. Thay vì viết tất cả giao diện trong một file lớn, chúng ta có thể chia nhỏ nó thành các thành phần nhỏ hơn như: Header, Footer, Button,... Và mỗi component này đều có phần đuôi mở rộng là `.vue` và gồm ba phần `<script></script>`, `<template></template>`, `<style></style>`
+
+![alt text](image.png)
+
 - Tạo và sử dụng một component như thế nào?
 
 Chúng ta chỉ cần tạo ra một file `.vue` và xây dựng logic, giao diện tương ứng cho component đó
