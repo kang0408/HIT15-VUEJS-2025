@@ -108,7 +108,7 @@ yarn -v
 
 #### 2.3. Cấu trúc thư mục trong Vue
 
-![alt text](image.png)
+![alt text](img/week-1/image.png)
 
 | **Thư mục/File**    | **Chức năng**                                              |
 | ------------------- | ---------------------------------------------------------- |

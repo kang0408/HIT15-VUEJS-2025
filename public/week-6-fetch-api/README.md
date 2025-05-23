@@ -11,7 +11,7 @@
   - Client (trình duyệt, ứng dụng di động, ...) gửi yêu cầu đến Server.
   - Server: xử lý yêu cầu, trả về dữ liệu cho Client. (dữ liệu có thể là JSON, XML, HTML, ...)
 
-  ![alt text](image.png)
+  ![alt text](img/week-6-fetch-api/image.png)
 
 #### 1.2. RESTlul API
 
@@ -85,7 +85,7 @@
   - **query**: `id=123&sort=asc`
   - **fragment**: `reviews`
 
-![alt text](image-1.png)
+![alt text](img/week-6-fetch-api/image-1.png)
 
 ### 2. Call API / Fetch API
 

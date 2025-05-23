@@ -199,7 +199,7 @@ const handleSubmit = () => alert("Biểu mẫu được gửi!");
 
 #### 2.9. Full directive syntax
 
-![alt text](image.png)
+![alt text](img/week-2/image.png)
 
 ### 3. Reactivity fundamentals
 

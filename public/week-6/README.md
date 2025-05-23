@@ -28,7 +28,7 @@ Các hook trong vòng đời của một component:
 |beforeUnmmount|Xảy ra ngay trước khi một component bị gỡ bỏ khỏi DOM|
 |unmounted|Xảy ra khi một component bị gỡ bỏ khỏi DOM|
 
-![alt text](image.png)
+![alt text](img/week-6/image.png)
 
 ##### Giai đoạn 1: Creation - Khởi tạo
 

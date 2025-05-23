@@ -30,7 +30,7 @@ Ta cùng xem đoạn code này nhé
 
 Chạy lên ta sẽ có kết quả như sau, bấm vào nút ta sẽ thấy số count tăng lên:
 
-![alt text](image-1.png)
+![alt text](img/week-5/image-1.png)
 
 Bây giờ ta muốn watch để mỗi khi mà count thay đổi thì ta sẽ in ra console nhé:
 
@@ -62,7 +62,7 @@ Bây giờ ta muốn watch để mỗi khi mà count thay đổi thì ta sẽ in
 
 Sau đó ta lưu lại và chạy lên, bấm vào nút để tăng count ta sẽ thấy ở console in ra các giá trị của count thay đổi theo thời gian như sau:
 
-![alt text](image-2.png)
+![alt text](img/week-5/image-2.png)
 
 Ví dụ tương tự với reactive():
 
@@ -87,7 +87,7 @@ Ví dụ tương tự với reactive():
 </template>
 ```
 
-![alt text](image-3.png)
+![alt text](img/week-5/image-3.png)
 
 Ta cũng có thể watch nhiều source cùng một lúc bằng cách truyền vào 1 array chứa nhiều source, callback trả về sẽ tương ứng là 1 mảng chứa giá trị hiện tại của các source (theo thứ tự ta khai báo):
 
@@ -116,7 +116,7 @@ Ta cũng có thể watch nhiều source cùng một lúc bằng cách truyền v
 
 Chạy lên sẽ cho kết quả như sau:
 
-![alt text](image-4.png)
+![alt text](img/week-5/image-4.png)
 
 Chú ý rằng watch sẽ chạy khi bất kì source nào thay đổi
 
@@ -152,7 +152,7 @@ Lại chả được quá ấy chớ, Vue support hết 😎😎, ta sửa lại
 
 Ở trên, ta để ý rằng ở tham số đầu tiên truyền vào watch ta đã sửa thành 1 cái callback, callback này trả về giá trị là tổng value của count1 và count2, và vì tổng này là number nên current cũng sẽ cho ta number, chạy lên ta thấy như sau:
 
-![alt text](image-5.png)
+![alt text](img/week-5/image-5.png)
 
 Ta cũng có thể mix chúng với nhau như sau nhé:
 
@@ -201,7 +201,7 @@ watch(obj.count, (count) => {
 
 Khi chạy lên ta sẽ thấy warning như sau:
 
-![alt text](image-6.png)
+![alt text](img/week-5/image-6.png)
 
 Lí do bởi vì: watcher chỉ chạy với reactive state, khi ta truyền thẳng giá trị của nó vào thì nó chỉ là giá trị JS thường và không reactive gì cả, ở ví dụ trên thì ta đang đơn giản là watch mỗi số 0, nó không reactive. Do vậy các bạn chú ý điều này cho mình thật kĩ nhé.
 
@@ -270,7 +270,7 @@ Và bởi vì watcher dành cho reactive state, nên computed ta cũng watch đ�
 
 Các bạn chạy lên và xem kết quả nhé:
 
-![alt text](image-7.png)
+![alt text](img/week-5/image-7.png)
 
 ##### Deep watch, Eager watch
 
@@ -356,7 +356,7 @@ Và để nói với Vue rằng "ê cu, cu phải theo dõi mọi thay đổi �
 
 Sau đó ta chạy lên sẽ thấy như sau:
 
-![alt text](image-8.png)
+![alt text](img/week-5/image-8.png)
 
 Khi ta watch deep thì Vue sẽ theo dõi mọi thay đổi ở bất kì thuộc tính ở bất kì level nào trong state của chúng ta
 
@@ -393,7 +393,7 @@ Mặc định thì watch nó sẽ chỉ chạy khi reactive state thay đổi, n
 
 F5 lại và ta sẽ thấy ngay từ ban đầu watch đã chạy và in ra console:
 
-![alt text](image-9.png)
+![alt text](img/week-5/image-9.png)
 
 Người ta hay gọi đây là eager watch, ý là watch 1 cách "háo hức, chủ động" 😄, mà mình thấy lúc dịch ra tiếng Việt nó kì quá, trong khi option của Vue để là immediate, nên mình cứ dùng từ Immediate cho dễ liên tưởng
 
@@ -565,7 +565,7 @@ Giả sử giờ ta muốn kiểm tra xem là tại thời điểm callback ch�
 
 Lưu lại và quay trở lại trình duyệt F5 test thử xem nhé:
 
-![alt text](image-10.png)
+![alt text](img/week-5/image-10.png)
 
 Ô????😲😲😲, hiện tại trên UI hiển thị là 6 đúng, nhưng khi ta getElementById lại ra 5?????
 
@@ -595,7 +595,7 @@ watch(
 
 Quay trở lại trình duyệt F5 và test ta sẽ thấy rằng giá trị khi ta getElementById đã bằng với giá trị hiện tại của count ở trong callback:
 
-![alt text](image-11.png)
+![alt text](img/week-5/image-11.png)
 
 Tương tự với watchEffect:
 
@@ -628,8 +628,8 @@ Do vậy với các watcher được khai báo async thì ta sẽ phải tự st
 ```js
 <script setup>
   import {watchEffect} from 'vue' // ✅ Đồng bộ -> tự stop watchEffect(() => {})
-  // ⛔️ Bất đồng bộ -> ta phải tự stop setTimeout(() => {watchEffect(() => {})}
-  , 100)
+  // ⛔️ Bất đồng bộ -> ta phải tự stop setTimeout(() => {watchEffect(() => {})},
+  100)
 </script>
 ```
 
@@ -755,7 +755,7 @@ Props là cách truyền dữ liệu từ component cha xuống component con tr
   ```
 
   Kết quả nhận được như sau:
-  ![alt text](image-12.png)
+  ![alt text](img/week-5/image-12.png)
 
   Chúng ta có một ví dụ khác như sau:
 
@@ -798,7 +798,7 @@ Props là cách truyền dữ liệu từ component cha xuống component con tr
 
   Kết quả nhận được sau mỗi lần nhấn button `Add`:
 
-  ![alt text](image-13.png)
+  ![alt text](img/week-5/image-13.png)
 
 - **Static và Dynamic Props**
 

@@ -6,7 +6,7 @@ Trước đó chúng ta đã cùng tìm hiểu về **`Props`** trong vue, chún
 
 Chúng ta hãy cùng tìm hiểu sâu hươn về `<slot>` element mà Vue cung cấp nhé
 
-![alt text](image.png)
+![alt text](img/week-7/image.png)
 
 Hãy cùng nhau phân tích hình ảnh phía trên được cung cấp bởi Vue
 
@@ -113,7 +113,7 @@ Bạn đã nhận ra điều khác biết rồi chứ?
 
 ### 2. Provide / Inject
 
-![alt text](image-1.png)
+![alt text](img/week-7/image-1.png)
 
 Bây giờ giả sử trong dự án Vue của bạn có nhưng component như hình trên và bạn muốn truyền dữ liệu từ `<Root>` và sử dụng nó ở `<DeepChild>`, tôi sẽ khuyên ban sử dụng `Props` để truyền dữ liệu từ `<Root>` xuống `<Footer>` rồi truyền tiếp xuống `<DeepChild>`.
 
@@ -123,7 +123,7 @@ Bây giờ hãy thử tưởng tưởng có vài chục Component nối liền n
 
 Và để hỗ trợ cái lười đó của bạn, Vue cung cấp `provide` và `inject`
 
-![alt text](image-2.png)
+![alt text](img/week-7/image-2.png)
 
 Khi thằng cha `provide` dữ liệu, thì bất cứ thằng con, cháu, chắt, chút, chít có quan hệ gia phả với thằng cha cũng đều có thể `inject` dữ liệu
 
