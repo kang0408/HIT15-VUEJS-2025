@@ -3,7 +3,8 @@
 #### 1. Quản lý state là gì?
 
 - Về mặt kỹ thuật, mỗi SFC quản lý state reactive riêng của nó. Nó là 1 vòng khép kín như sau:
-  ![one-way data flow](https://vuejs.org/assets/state-flow.Cd6No79V.png)
+
+![one-way data flow](https://vuejs.org/assets/state-flow.Cd6No79V.png)
 
 - Tuy nhiên, chúng ta có thể có những component dùng chung 1 state:
 
@@ -121,11 +122,14 @@ counterStore.$reset();
 #### Thay đổi `state`
 
 - Có 3 cách thay đổi giá trị cho `state` của 1 `store`
-  a) Thay đổi trực tiếp
-  b) `$patch()` method
-  c) Sử dụng `actions`
-
-### DefineToRef
+  - Thay đổi trực tiếp
+  - `$patch()` method
+    ```js
+    counter.$patch({
+      count: counter.count + 1,
+    });
+    ```
+  - Sử dụng `actions`
 
 ### 3. Getters
 
@@ -195,9 +199,3 @@ export const useCounterStore = defineStore("counter", {
   },
 });
 ```
-
-## Câu hỏi:
-
-1. Muốn reset `state` với `Setup Store` thì làm như nào?
-
-2. Ngoài cách sử dụng phương thức `$subscribe()` để theo dõi sự thay đổi của `state` của 1 `store` thì còn những các nào khác không?

@@ -133,6 +133,11 @@ const weeks = ref([
     name: "Tuần 8",
     content: ["Vue router"],
   },
+  {
+    id: 9,
+    name: "Tuần 9",
+    content: ["Vue Pinia"],
+  },
 ]);
 </script>
 
